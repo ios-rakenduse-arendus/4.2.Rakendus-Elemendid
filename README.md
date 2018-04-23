@@ -68,20 +68,12 @@ func createRestartBtn() {
    /* Loome skoori kuvamise ekraanil */
     func createScoreLabel() -> SKLabelNode {
         let scoreLbl = SKLabelNode()
-        scoreLbl.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2 + self.frame.height / 2.6)
+        scoreLbl.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2 + self.frame.height / 3.0)
         scoreLbl.text = "\(score)"
+        scoreLbl.fontColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
         scoreLbl.zPosition = 5
         scoreLbl.fontSize = 50
         scoreLbl.fontName = "HelveticaNeue-Bold"
-        
-        let scoreBg = SKShapeNode()
-        scoreBg.position = CGPoint(x: 0, y: 0)
-        scoreBg.path = CGPath(roundedRect: CGRect(x: CGFloat(-50), y: CGFloat(-30), width: CGFloat(100), height: CGFloat(100)), cornerWidth: 50, cornerHeight: 50, transform: nil)
-        let scoreBgColor = UIColor(red: CGFloat(0.0), green: CGFloat(0.0), blue: CGFloat(0.0), alpha: CGFloat(1.0))
-        scoreBg.strokeColor = UIColor.clear
-        scoreBg.fillColor = scoreBgColor
-        scoreBg.zPosition = -1
-        scoreLbl.addChild(scoreBg)
         return scoreLbl
     }
     
@@ -89,9 +81,9 @@ func createRestartBtn() {
     /* Loome parima skoori kuvamise ekraanil */
     func createHighscoreLabel() -> SKLabelNode {
         let highscoreLbl = SKLabelNode()
-        highscoreLbl.position = CGPoint(x: self.frame.width - 80, y: self.frame.height - 22)
+        highscoreLbl.position = CGPoint(x: self.frame.width - 100, y: self.frame.height - 45)
         if let highestScore = UserDefaults.standard.object(forKey: "highestScore"){
-            highscoreLbl.text = "Highest Score: \(highestScore)"
+            highscoreLbl.text = "Highest EAP Score: \(highestScore)"
         } else {
             highscoreLbl.text = "Highest Score: 0"
         }
