@@ -5,22 +5,22 @@
 ```swift
     func createEksmati() -> SKSpriteNode {
     
-       /* Loome Eksmati ning paneme paika ta mõõdud ja asukoha */
+
         eksmati = SKSpriteNode(imageNamed: "eksmati")
         eksmati.size = CGSize(width: 50, height: 50)
         eksmati.position = CGPoint(x:self.frame.midX, y:self.frame.midY)
         
-       /* Teeme Eksmatist pallile sarnaneva füüsilise keha (SKPhysicsBody) */
+
         eksmati.physicsBody = SKPhysicsBody(circleOfRadius: eksmati.size.width / 2)
         eksmati.physicsBody?.linearDamping = 1.1
         eksmati.physicsBody?.restitution = 0
         
-       /* Paneme Eksmati füüsilise keha reageerima teiste kehadega */
+
         eksmati.physicsBody?.categoryBitMask = CollisionBitMask.eksmatiCategory
         eksmati.physicsBody?.collisionBitMask = CollisionBitMask.postCategory | CollisionBitMask.groundCategory
 
         
-       /* Paneme Eksmati reageerima gravitatsioonile */
+
         eksmati.physicsBody?.affectedByGravity = false
         eksmati.physicsBody?.isDynamic = true
         
@@ -31,8 +31,6 @@
 ### 2. Mine nüüd GameScene.swift kausta ning kirjuta *createScene* sisse, eelnevalt kirjutatud koodi taha järgnevad kaks rida:
 
    ```swift
-   
-   /* Kutsume GameElements.swift failis loodud Eksmati välja */ 
         self.eksmati = createEksmati()
         self.addChild(eksmati)
    ```
