@@ -39,6 +39,13 @@ ___
 **Vajuta nüüd play nuppu ning vaata simulatori abiga, kas Eksmati on ekraanil kuvatud**
 ___
 
+**VIDEO(1.,2.):**
+
+<a href="https://www.youtube.com/watch?v=_ImKsn8M7S8
+" target="_blank"><img src="http://img.youtube.com/vi/_ImKsn8M7S8/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
+
+
 # ÜLESANNE: 
 * Pane Eksmati füüsilise keha (*physicsBody*) koos *contactTestBitMask*'iga reageerima posti kategooria kokkupõrkamisega, EAP kategooria kokkupõrkamisega ning maapinna (*ground*) kategooria kokkupõrkamisega.
 >**Vaata näiteks eelnevat koodiriba, kus me määrasime Eksmati füüsilise keha koos *collisionBitMask*'iga reageerima posti ja maapinna (ground) kategooriaga ning imiteeri**
@@ -108,23 +115,27 @@ func createRestartBtn() {
  
 
 ```swift
-/* Kutsume GameElements.swift failis loodud skoori välja */ 
+
 scoreLbl = createScoreLabel()
 self.addChild(scoreLbl)
  
  
-/* Kutsume GameElements.swift failis loodud parima skoori välja */ 
 highscoreLbl = createHighscoreLabel()
 self.addChild(highscoreLbl)
 
-
-/* Kutsume GameElements.swift failis loodud logo välja */  
 createLogo()
 ```
  
  
 ___
 **Vajuta uuesti Xcode play nuppu ning vaata, kas ekraan kuvab kõik selle, mida ta kuvama peaks**
+
+
+**VIDEO(3.,4.):**
+
+<a href="https://youtu.be/w73dgJHEjp4
+" target="_blank"><img src="http://img.youtube.com/vi/w73dgJHEjp4/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 ___ 
 # ÜLESANNE:
@@ -143,7 +154,7 @@ ___
 	* Määra teksti värviks(```fontColor```) must ehk pane kõik peamised värvid nulliks ning alpka väärtuseks 1.0
 	* ```zPosition``` pane võrduma 5'ga
 	* Teksti suuruseks(```fontSize```) määra 20
-	* Teksti tüübiks(```fontName``` määra "HelveticaNeue"
+	* Teksti tüübiks(```fontName```) määra "HelveticaNeue"
 	* ```return```
 	* Nüüd mine GameScene.swift faili ning kutsu sarnaselt skoori ja parima skoori kuvamisele välja ka taptoplayLbl 
 
