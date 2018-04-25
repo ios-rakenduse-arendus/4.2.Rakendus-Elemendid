@@ -129,7 +129,7 @@ createLogo()
  
 ___
 **Vajuta uuesti Xcode play nuppu ning vaata, kas ekraan kuvab kõik selle, mida ta kuvama peaks**
-
+___ 
 
 **VIDEO(3.,4.):**
 
@@ -137,7 +137,7 @@ ___
 " target="_blank"><img src="http://img.youtube.com/vi/w73dgJHEjp4/0.jpg" 
 alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
-___ 
+
 # ÜLESANNE:
 * Loo sarnaselt restardi nupule nüüd ise pausi nupu funktsioon järgmiste puntidega:
     * Määra nupu kuvamiseks õige pildi nimi
