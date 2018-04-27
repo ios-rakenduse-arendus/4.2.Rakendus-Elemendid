@@ -139,7 +139,7 @@ alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 
 # ÜLESANNE:
-* Loo sarnaselt restardi nupule nüüd ise pausi nupu funktsioon järgmiste puntidega:
+* Loo sarnaselt restardi nupule nüüd ise pausi nupu funktsioon järgmiste punktidega:
     * Määra nupu kuvamiseks õige pildi nimi
     * Määra pausi nupu laiuseks ja kõrguseks 40
     * Määra pausi nupu positsiooni **x** kordinaadiks *self.frame.width - 30* ning **y** kordinaadiks *30*
@@ -159,6 +159,11 @@ alt="Projekti loomine" width="240" height="180" border="10" /></a>
 	* Nüüd mine GameScene.swift faili ning kutsu sarnaselt skoori ja parima skoori kuvamisele välja ka taptoplayLbl 
 
 >Kindlasti kontrolli simulatoris, kas loodud funktsioonid kuvatakse ekraanil nii nagu peab.
+
+### Teadmiste kontroll:
+
+* Kontrolli oma teadmisi [LearningApps](https://learningapps.org/watch?v=p3j5n93dc18) lehel.
+
 ___
 
 
